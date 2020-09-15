@@ -33,6 +33,7 @@ btn.addEventListener("click", (e) => {
 });
 
 clearBtn.addEventListener("mousedown", (e) => {
+  t.classList.remove("invert");
   for (let row of t.rows) {
     for (let cell of row.cells) {
       cell.classList.remove("black-td");
